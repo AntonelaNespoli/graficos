@@ -1,0 +1,15 @@
+<h5>Grafico de barras</h5><hr>
+<div>
+    <div style="display: block">
+      <canvas baseChart
+              [datasets]="barChartData"
+              [labels]="barChartLabels"
+              [options]="barChartOptions"
+              [legend]="barChartLegend"
+              [chartType]="barChartType"
+              (chartHover)="chartHovered($event)"
+              (chartClick)="chartClicked($event)"></canvas>
+    </div>
+    <br><br>
+    <button (click)="randomize()" class="btn btn-block btn-outline-info">Update</button>
+  </div>

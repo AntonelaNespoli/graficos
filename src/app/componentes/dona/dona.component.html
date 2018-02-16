@@ -1,0 +1,13 @@
+<h5>Grafico de dona</h5><hr>
+<div>
+  <div style="display: block">
+    <canvas baseChart
+                [data]="doughnutChartData"
+                [labels]="doughnutChartLabels"
+                [chartType]="doughnutChartType"
+                (chartHover)="chartHovered($event)"
+                (chartClick)="chartClicked($event)"></canvas>
+  </div>
+  <br>
+  <button (click)="random()" class="btn btn-block btn-outline-info">Update</button>
+</div>
